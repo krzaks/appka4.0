@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Angielski Quiz</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Angielski Quiz</h1>
+    <div id="word-container">
+        <h2 id="word"></h2>
+        <label>
+            <input type="text" id="answer" placeholder="Wpisz tłumaczenie">
+        </label>
+        <button id="submit">Sprawdź</button>
+    </div>
+    <div id="add-word-container">
+        <h2>Dodaj nowe słowo</h2>
+        <label>
+            Polskie słowo:
+            <input type="text" id="new-word-polish">
+        </label>
+        <label>
+            Angielskie słowo:
+            <input type="text" id="new-word-english">
+        </label>
+        <button id="add-word">Dodaj</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
